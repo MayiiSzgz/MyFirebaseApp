@@ -2,17 +2,22 @@ package com.example.myfirebaseapp.modelo;
 
 public class Persona
 {
-    public String id;
-    public String nombre;
-    public String apellidos;
-    public String correo_electronico;
+    private String id;
+    private String nombre;
+    private String apellidos;
+    private String correo_electronico;
+    private String contrasenia;
 
-    public Persona(String id, String nombre, String apellidos, String correo_electronico)
+    public Persona()
     {
-        this.id = id;
-        this.nombre = nombre;
-        this.apellidos = apellidos;
-        this.correo_electronico = correo_electronico;
+    }
+
+    public String getContrasenia() {
+        return contrasenia;
+    }
+
+    public void setContrasenia(String contrasenia) {
+        this.contrasenia = contrasenia;
     }
 
     public String getId()
@@ -55,9 +60,5 @@ public class Persona
         this.correo_electronico = correo_electronico;
     }
 
-    @Override
-    public String toString()
-    {
-        return nombre;
-    }
+
 }
